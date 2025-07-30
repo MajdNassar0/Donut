@@ -125,6 +125,26 @@ h1,h2,h3,h4,h5,p{
   transform: scale(1.02);
 }
 /* Donuts */
+.join-our-flock .doun{
+      animation: floatCircle 4s ease-in-out infinite;
+}
+@keyframes floatCircle {
+  0% {
+    transform: translate(0, 0);
+  }
+  25% {
+    transform: translate(20px, -20px);
+  }
+  50% {
+    transform: translate(40px, 0);
+  }
+  75% {
+    transform: translate(20px, 20px);
+  }
+  100% {
+    transform: translate(0, 0);
+  }
+}
 
 /* order */
 .order .card{
@@ -209,14 +229,11 @@ h1,h2,h3,h4,h5,p{
 
 /* footer */
 .footer{
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 20px;
+  padding-bottom: 20px;
   background-color: #2c546f;
 }
-.footer .card-log{
-  padding-top: 80px;
-  padding-bottom: 80px;
-}
+
 .footer .card{
     border: none;
 }
@@ -250,6 +267,198 @@ h1,h2,h3,h4,h5,p{
   transform: scale(1.02);
 
 }
+
+
+/* page about us */
+.about {
+  background-color: var(--secondary-color) !important;
+  color: var(--primary-color) !important;
+  padding-top:80px;
+  border: none;
+}
+.about h1{
+    text-shadow: 2px 5px 2px #e2d160cc;
+}
+.about img {
+  border-radius: 20px;
+  width: 500px;
+  height: 550px;
+  margin-bottom:20px;
+  transition: box-shadow 4s;
+}
+.about .img2{
+  display: none;
+}
+.about .imgg:hover .img2{
+  display: block !important;
+    box-shadow: 0 5px 30px rgba(82, 36, 168, 0.596);
+}
+
+.about .imgg:hover .img1{
+  display: none;
+}
+
+
+/* meet ollie */
+.meet-ollie{
+  background-color:hsla(50, 29%, 73%, .2) !important;
+  clip-path: polygon(0 10%, 100% 0%, 100% 92%, 0% 100%); 
+
+}
+.meet-ollie img{
+  width: 200px;
+  height: 300px;
+}
+.meet-ollie h1{
+  padding-top: 80px;
+  color: var(--primary-hover-color) !important;
+  text-shadow: 1px 5px 2px #2c546f;
+}
+
+/* FAQS */
+.FAQs button{
+  color: #203e52 !important;
+}
+
+
+/*  card_about */
+.card_about span{
+  font-size: 35px;
+  top: 37%;
+  left: 45%;
+}
+.card_about .card-body{
+  transition: box-shadow 1.5s;
+}
+.card_about .card-body:hover,
+.card_about .card-body:focus {
+  box-shadow: 0px 0px 10px 10px hsla(50, 14%, 58%, 0.521);
+}
+
+/* log in */
+.log_in{
+  width: 100%;
+}
+.log_in_box{
+  width: 600px;
+  padding: 100px;
+}
+.input input{
+  border: none;
+  outline: none;
+}
+.input{
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #b0b8bd;
+  border-radius: 8px;
+}
+.log_in .b1{
+  width: 200px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: var(--primary-hover-color);
+  transition: background-color 1s,color 1s ;
+}
+.log_in .b1:hover{
+  background-color: var(--primary-hover-color);
+  color: var(--primary-color);
+  transform: scale(1.1);
+}
+
+.log_in a{
+  color: #325974;
+}
+ .coo{
+  background: rgba(44, 84, 111, .2);
+  height: 1px;
+  width: 400px;
+  margin-block: 24px;
+}
+.log_in .b2{
+  width: 200px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: var(--primary-hover-color);
+  color: var(--primary-color);
+  transition: background-color 1s,color 1s ;
+}
+.log_in i{
+  color: #3e6c8b;
+}
+.b2 a{
+  text-decoration: none;
+}
+.log_in .b2:hover {
+  background-color: var(--primary-color);
+  transform: scale(1.1);
+}
+.log_in .b2:hover a {
+    color: var(--primary-hover-color);
+}
+
+
+/* sign up */
+.sign_up{
+  width: 100%;
+}
+.sign_up_box{
+  width: 600px;
+  padding: 100px;
+}
+.input_sign input{
+  border: none;
+  outline: none;
+}
+.input_sign input{
+  padding: 10px 20px;
+  background-color: #fff;
+  border: 1px solid #b0b8bd;
+  border-radius: 8px;
+}
+.sign_up .b1{
+  width: 200px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: var(--primary-color);
+  color: var(--primary-hover-color);
+  transition: background-color 1s,color 1s ;
+}
+.sign_up .b1:hover{
+  background-color: var(--primary-hover-color);
+  color: var(--primary-color);
+  transform: scale(1.1);
+}
+
+
+
+.sign_up .b2{
+  width: 200px;
+  padding: 5px 10px;
+  border-radius: 8px;
+  background-color: var(--primary-hover-color);
+  color: var(--primary-color);
+  transition: background-color 1s,color 1s ;
+}
+.b2 a{
+  text-decoration: none;
+}
+.sign_up .b2:hover {
+  background-color: var(--primary-color);
+  transform: scale(1.1);
+}
+.sign_up a{
+  color:#2c546f
+}
+.sign_up .b2:hover a {
+    color: var(--primary-hover-color);
+}
+.birth input,
+.gender{
+  width: 237px;
+}
+
 
 
 @media screen and (max-width:1050px) {
@@ -291,8 +500,11 @@ h1,h2,h3,h4,h5,p{
   }
   .menu{
   padding-top:50px;
-  
-}
+  }
+  .meet-olli p{
+    margin: 0px !important;
+    padding: 0px !important;
+  }
 }
 @media screen and (max-width:600px) {
   .header img{
@@ -302,6 +514,14 @@ h1,h2,h3,h4,h5,p{
     font-size: 25px;
     line-height: 30px;
   }
+  .log_in_box{
+  width: 100%;
+  padding: 100px;
+}
+ .coo{
+  width: 300px;
+}
+
 }
 
 
