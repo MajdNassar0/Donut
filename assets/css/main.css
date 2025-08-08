@@ -47,7 +47,6 @@ h1,h2,h3,h4,h5,p{
 /*  navbar  */
 .navbar{
     background-color: var(--primary-color);
-    transition: color .8s ;
     z-index: 9;
 }
 .navbar a{
@@ -166,7 +165,6 @@ h1,h2,h3,h4,h5,p{
 /* photo */
 .photo .cont{
   top: 50%;
-  transform: translateY(-50%);
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -209,9 +207,6 @@ h1,h2,h3,h4,h5,p{
   height: 40px;
   top: 100%;
   border-radius: 50%;
-  background-size: 60% 60%; 
-  background-position: center;
-  background-repeat: no-repeat;
 }
 .customer h4{
   color:#dfc015  !important;
